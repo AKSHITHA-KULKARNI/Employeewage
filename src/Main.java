@@ -31,5 +31,9 @@ public class Main {
         //UC7
         EmployeeWage employeeWage = new EmployeeWage();
         employeeWage.computeEmployeeWage();
+
+        // UC8: Compute Employee Wage for Multiple Companies
+        EmployeeWageForCompanies.computeEmployeeWage("CompanyA", 20, 20, 100);
+        EmployeeWageForCompanies.computeEmployeeWage("CompanyB", 25, 22, 120);
     }
 }
