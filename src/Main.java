@@ -23,5 +23,13 @@ public class Main {
         // UC5: Calculate Wages for a Month
         MonthlyWages monthlyWages = new MonthlyWages();
         System.out.println("Monthly Wage: $" + monthlyWages.calculateMonthlyWage());
+
+        // UC6: Total Wages with Hour/Day Conditions
+        TotalWages totalWages = new TotalWages();
+        System.out.println("Total Wage (max 100 hours or 20 days): $" + totalWages.calculateTotalWage());
+
+        //UC7
+        EmployeeWage employeeWage = new EmployeeWage();
+        employeeWage.computeEmployeeWage();
     }
 }
