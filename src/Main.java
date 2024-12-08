@@ -10,5 +10,10 @@ public class Main {
         // UC2: Calculate Daily Wage
         EmployeeDailyWage dailyWage = new EmployeeDailyWage();
         System.out.println("Daily Wage: $" + dailyWage.calculateDailyWage());
+
+        // UC3: Calculate Part-Time Wage
+        EmployeePartTimeWage partTimeWage = new EmployeePartTimeWage();
+        System.out.println("Part-Time Wage: $" + partTimeWage.calculatePartTimeWage());
+
     }
 }
