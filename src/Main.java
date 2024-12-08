@@ -19,5 +19,9 @@ public class Main {
         EmployeeWageWithSwitch switchWage = new EmployeeWageWithSwitch();
         System.out.println("Full-Time Wage using Switch: $" + switchWage.calculateWageUsingSwitch(8));
         System.out.println("Part-Time Wage using Switch: $" + switchWage.calculateWageUsingSwitch(4));
+
+        // UC5: Calculate Wages for a Month
+        MonthlyWages monthlyWages = new MonthlyWages();
+        System.out.println("Monthly Wage: $" + monthlyWages.calculateMonthlyWage());
     }
 }
