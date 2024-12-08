@@ -15,5 +15,9 @@ public class Main {
         EmployeePartTimeWage partTimeWage = new EmployeePartTimeWage();
         System.out.println("Part-Time Wage: $" + partTimeWage.calculatePartTimeWage());
 
+        // UC4: Switch Case Wage Computation
+        EmployeeWageWithSwitch switchWage = new EmployeeWageWithSwitch();
+        System.out.println("Full-Time Wage using Switch: $" + switchWage.calculateWageUsingSwitch(8));
+        System.out.println("Part-Time Wage using Switch: $" + switchWage.calculateWageUsingSwitch(4));
     }
 }
