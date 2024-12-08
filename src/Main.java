@@ -35,5 +35,30 @@ public class Main {
         // UC8: Compute Employee Wage for Multiple Companies
         EmployeeWageForCompanies.computeEmployeeWage("CompanyA", 20, 20, 100);
         EmployeeWageForCompanies.computeEmployeeWage("CompanyB", 25, 22, 120);
+
+        // UC9: Save Total Wage for Each Company
+        EmpWageBuilder companyA = new EmpWageBuilder("CompanyA", 20, 20, 100);
+        companyA.computeEmployeeWage();
+
+        // UC10: Manage Employee Wage of Multiple Companies
+        EmpWageBuilderForMultipleCompanies multiCompanyWage = new EmpWageBuilderForMultipleCompanies();
+        multiCompanyWage.addCompany(new CompanyEmpWage("CompanyA", 20, 20, 100));
+        multiCompanyWage.addCompany(new CompanyEmpWage("CompanyB", 25, 22, 120));
+        multiCompanyWage.computeWageForAllCompanies();
+
+        // UC11: Using Interface Approach
+        EmpWageBuilderUsingInterface companyBInterface = new EmpWageBuilderUsingInterface("CompanyB", 25, 22, 120);
+        companyBInterface.computeEmployeeWage();
+
+        // UC12: Refactor to List of Companies
+        EmpWageBuilderList wageList = new EmpWageBuilderList();
+        wageList.addWageBuilder(new EmpWageBuilder("CompanyA", 20, 20, 100));
+        wageList.addWageBuilder(new EmpWageBuilder("CompanyB", 25, 22, 120));
+        wageList.computeWagesForAll();
+
+        // UC13: Get Total Wage When Queried
+        EmpWageBuilderWithQuery companyCQuery = new EmpWageBuilderWithQuery("CompanyC", 30, 20, 100);
+        companyCQuery.computeEmployeeWage();
+        System.out.println("Total Wage for CompanyC: $" + companyCQuery.getTotalWage());
     }
 }
